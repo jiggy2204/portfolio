@@ -1,0 +1,381 @@
+@font-face {
+  font-family: Commissioner;
+  src: url("./fonts/Commissioner-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Commissioner Thin";
+  src: url("./fonts/Commissioner-Thin.ttf");
+}
+
+@font-face {
+  font-family: "Commissioner Light";
+  src: url("./fonts/Commissioner-Light.ttf");
+}
+
+@font-face {
+  font-family: "Commissioner Extra Light";
+  src: url("./fonts/Commissioner-ExtraLight.ttf");
+}
+
+@font-face {
+  font-family: "Commissioner Bold";
+  src: url("./fonts/Commissioner-Bold.ttf");
+}
+
+@font-face {
+  font-family: "Commissioner SemiBold";
+  src: url("./fonts/Commissioner-SemiBold.ttf");
+}
+
+@font-face {
+  font-family: "Commissioner Extra Bold";
+  src: url("./fonts/Commissioner-ExtraBold.ttf");
+}
+
+@font-face {
+  font-family: "Commissioner Black";
+  src: url("./fonts/Commissioner-Black.ttf");
+}
+
+/* MAIN STYLES FOR PAGE */
+* {
+  padding: 0;
+  margin: 0;
+}
+
+@media all and (min-width: 375px) {
+  body {
+    background-color: #03253a;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+
+  h1 {
+    font-family: Commissioner, sans-serif;
+    color: #8be8cb;
+    font-size: 24px;
+  }
+
+  h2 {
+    font-family: "Commissioner Thin", sans-serif;
+    color: #8be8cb;
+    letter-spacing: 1.5px;
+    font-size: 20px;
+  }
+
+  h3 {
+    font-family: "Commissioner Semi Bold", sans-serif;
+    color: #00a7e1;
+    font-size: 18px;
+  }
+
+  li,
+  p {
+    font-family: Commissioner, sans-serif;
+    line-height: 32px;
+    color: #eee5e9;
+  }
+
+  a,
+  li {
+    font-family: "Commissioner Light", sans-serif;
+  }
+
+  li {
+    list-style-type: none;
+  }
+
+  a {
+    text-decoration: none;
+
+    &:link {
+      color: #eee5e9;
+    }
+
+    &:visited {
+      color: #8783d1;
+    }
+
+    &:hover {
+      color: #00a7e1;
+    }
+
+    &:active {
+      color: #8be8cb;
+    }
+
+    &.text-link {
+      font-family: "Commissioner Semi Bold", sans-serif;
+      color: #00a7e1;
+      text-decoration: underline;
+    }
+  }
+
+  img {
+    width: 80%;
+  }
+
+  hr {
+    width: 420px;
+    height: 25px;
+    margin: 5% 0;
+    border: none;
+    background-image: url("./images/divider_01.png");
+  }
+
+  /* END PAGE STYLES */
+
+  /* HEADER SECTION STYLES */
+
+  header {
+    display: block;
+    margin: 0 0 5% 0;
+
+    #header-container {
+      display: flex;
+      justify-content: center;
+
+      img {
+        width: 50%;
+        &#name-logo {
+          margin: 0 -15% 0 7%;
+        }
+
+        &#profile-pic {
+          z-index: -1;
+        }
+      }
+    }
+
+    nav {
+      transition: all 0.25s ease;
+
+      &.sticky {
+        position: fixed;
+        top: 0;
+        width: 100%;
+
+        background-color: #8be8cb;
+        z-index: 1000;
+
+        a {
+          color: #0d2149 !important;
+        }
+      }
+
+      ul {
+        display: flex;
+        justify-content: center;
+
+        li {
+          font-size: 16px;
+          padding: 10px;
+        }
+      }
+    }
+  }
+
+  /* END HEADER STYLES */
+
+  /* MAIN SECTION STYLES */
+
+  main {
+    padding: 5%;
+
+    h1 {
+      text-align: center;
+      line-height: 36px;
+      font-weight: 400;
+      padding: 3%;
+    }
+
+    .main-section::before {
+      display: block;
+      content: "";
+      margin-top: -100x;
+      height: 100px;
+      visibility: hidden;
+      pointer-events: none;
+    }
+
+    .main-section-div {
+      margin-bottom: 10%;
+    }
+
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+
+      li {
+        list-style-type: disc;
+        margin: 0 7%;
+      }
+    }
+
+    img {
+      margin: 0 10%;
+    }
+
+    #form-area {
+      display: block;
+
+      label {
+        position: relative;
+        margin-bottom: 5%;
+        font-family: "Commissioner Thin", sans-serif;
+        color: #00a7e1;
+        font-size: 24px;
+        letter-spacing: 1.5px;
+      }
+
+      input,
+      textarea {
+        width: 100%;
+      }
+
+      textarea {
+        height: 150px;
+      }
+
+      input {
+        margin-bottom: 5%;
+      }
+    }
+
+    #contact-footer {
+      background: none;
+      text-align: center;
+
+      p {
+        color: #eee5e9;
+        a,
+        span {
+          color: #00a7e1;
+        }
+      }
+    }
+  }
+
+  /* END MAIN STYLES */
+
+  /* FOOTER SECTION STYLES */
+
+  #footer {
+    text-align: center;
+    background: #208aae;
+    padding: 2%;
+
+    p {
+      color: #0d2149;
+      font-weight: 400;
+    }
+  }
+
+  /* END FOOTER STYLES */
+}
+
+@media all and (min-width: 600px) {
+}
+
+/* 1280x760 MEDIA QUERY */
+@media all and (min-width: 1280px) {
+  h1 {
+    font-size: 60px;
+  }
+
+  h2 {
+    font-size: 52px;
+  }
+
+  h3 {
+    font-size: 38px;
+  }
+
+  li,
+  p {
+    font-size: 20px;
+    line-height: 48px;
+  }
+
+  hr {
+    width: 0;
+    height: 0;
+    margin: -5%;
+    border: none;
+    background-image: url("./images/divider_01.png");
+  }
+
+  /*HEADER STYLE*/
+  header {
+    margin: 0;
+  }
+
+  /* MAIN STYLE */
+  main {
+    padding: 0;
+    margin-top: 0;
+
+    h1 {
+      line-height: 72px;
+    }
+
+    section {
+      display: block;
+      margin: 0 auto;
+      width: 75%;
+
+      &#intro {
+        display: flex;
+        justify-content: space-evenly;
+
+        #goal {
+          margin-right: 15%;
+          width: 75%;
+        }
+      }
+
+      /* PORTFOLIO AREA ADJUSTMENT */
+      .portfolio-holder {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        .portfolio-info {
+          width: 45%;
+          margin: 0 2%;
+        }
+      }
+
+      /* FORM AREA ADJUSTMENT */
+      #form-area {
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-start;
+        margin-bottom: 5%;
+
+        form {
+          flex: 2;
+          margin-right: 15%;
+
+          input {
+            margin-bottom: 3%;
+          }
+        }
+
+        #contact-footer {
+          text-align: left;
+        }
+      }
+    }
+  }
+}
+
+@media all and (min-width: 1920px) {
+  li,
+  p {
+    font-size: 24px;
+  }
+}
