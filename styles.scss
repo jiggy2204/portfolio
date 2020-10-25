@@ -138,12 +138,13 @@
       justify-content: center;
 
       img {
-        width: 50%;
         &#name-logo {
-          margin: 0 -15% 0 7%;
+          width: 65%;
+          margin-right: -25%;
         }
 
         &#profile-pic {
+          width: 50%;
           z-index: -1;
         }
       }
