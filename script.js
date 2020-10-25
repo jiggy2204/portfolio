@@ -1,4 +1,4 @@
-$(document).ready(function () {
+$(function () {
   window.onscroll = function () {
     stickNavBar();
   };
@@ -14,6 +14,5 @@ $(document).ready(function () {
       navbar.removeClass("sticky");
     }
   }
-
   stickNavBar();
 });
