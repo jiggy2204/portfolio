@@ -44,205 +44,243 @@
   margin: 0;
 }
 
-@media all and (min-width: 375px) {
-  body {
-    background-color: #03253a;
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
-  }
-  h1 {
-    font-family: Commissioner, sans-serif;
-    color: #8be8cb;
-    font-size: 24px;
-  }
-  h2 {
-    font-family: "Commissioner Thin", sans-serif;
-    color: #8be8cb;
-    letter-spacing: 1.5px;
-    font-size: 20px;
-  }
-  h3 {
-    font-family: "Commissioner Semi Bold", sans-serif;
-    color: #00a7e1;
-    font-size: 18px;
-  }
-  li,
-  p {
-    font-family: Commissioner, sans-serif;
-    line-height: 32px;
-    color: #eee5e9;
-  }
-  a,
-  li {
-    font-family: "Commissioner Light", sans-serif;
-  }
-  li {
-    list-style-type: none;
-  }
-  a {
-    text-decoration: none;
-  }
-  a:link {
-    color: #eee5e9;
-  }
-  a:visited {
-    color: #8783d1;
-  }
-  a:hover {
-    color: #00a7e1;
-  }
-  a:active {
-    color: #8be8cb;
-  }
-  a.text-link {
-    font-family: "Commissioner Semi Bold", sans-serif;
-    color: #00a7e1;
-    text-decoration: underline;
-  }
-  img {
-    width: 80%;
-  }
-  hr {
-    width: 420px;
-    height: 25px;
-    margin: 5% 0;
-    border: none;
-    background-image: url("./images/divider_01.png");
-  }
-  /* END PAGE STYLES */
-  /* HEADER SECTION STYLES */
-  header {
-    display: block;
-    margin: 0 0 5% 0;
-  }
-  header #header-container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  header #header-container img#name-logo {
-    width: 65%;
-    margin-right: -25%;
-  }
-  header #header-container img#profile-pic {
-    width: 50%;
-    z-index: -1;
-  }
-  header nav {
-    -webkit-transition: all 0.25s ease;
-    transition: all 0.25s ease;
-  }
-  header nav.sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background-color: #8be8cb;
-    z-index: 1000;
-  }
-  header nav.sticky a {
-    color: #0d2149 !important;
-  }
-  header nav ul {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  header nav ul li {
-    font-size: 16px;
-    padding: 10px;
-  }
-  /* END HEADER STYLES */
-  /* MAIN SECTION STYLES */
-  main {
-    padding: 5%;
-  }
-  main h1 {
-    text-align: center;
-    line-height: 36px;
-    font-weight: 400;
-    padding: 3%;
-  }
-  main .main-section::before {
-    display: block;
-    content: "";
-    margin-top: -100x;
-    height: 100px;
-    visibility: hidden;
-    pointer-events: none;
-  }
-  main .main-section-div {
-    margin-bottom: 10%;
-  }
-  main ul {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  main ul li {
-    list-style-type: disc;
-    margin: 0 7%;
-  }
-  main img {
-    margin: 0 10%;
-  }
-  main #form-area {
-    display: block;
-  }
-  main #form-area label {
-    position: relative;
-    margin-bottom: 5%;
-    font-family: "Commissioner Thin", sans-serif;
-    color: #00a7e1;
-    font-size: 24px;
-    letter-spacing: 1.5px;
-  }
-  main #form-area input,
-  main #form-area textarea {
-    width: 100%;
-  }
-  main #form-area textarea {
-    height: 150px;
-  }
-  main #form-area input {
-    margin-bottom: 5%;
-  }
-  main #contact-footer {
-    background: none;
-    text-align: center;
-  }
-  main #contact-footer p {
-    color: #eee5e9;
-  }
-  main #contact-footer p a,
-  main #contact-footer p span {
-    color: #00a7e1;
-  }
-  /* END MAIN STYLES */
-  /* FOOTER SECTION STYLES */
-  #footer {
-    text-align: center;
-    background: #208aae;
-    padding: 2%;
-  }
-  #footer p {
-    color: #0d2149;
-    font-weight: 400;
-  }
-  /* END FOOTER STYLES */
+body {
+  background-color: #03253a;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
 }
 
+h1 {
+  font-family: Commissioner, sans-serif;
+  color: #8be8cb;
+  font-size: 24px;
+}
+
+h2 {
+  font-family: "Commissioner Thin", sans-serif;
+  color: #8be8cb;
+  letter-spacing: 1.5px;
+  font-size: 20px;
+}
+
+h3 {
+  font-family: "Commissioner Semi Bold", sans-serif;
+  color: #00a7e1;
+  font-size: 18px;
+}
+
+li,
+p {
+  font-family: Commissioner, sans-serif;
+  line-height: 32px;
+  color: #eee5e9;
+}
+
+a,
+li {
+  font-family: "Commissioner Light", sans-serif;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:link {
+  color: #eee5e9;
+}
+
+a:visited {
+  color: #8783d1;
+}
+
+a:hover {
+  color: #00a7e1;
+}
+
+a:active {
+  color: #8be8cb;
+}
+
+a.text-link {
+  font-family: "Commissioner Semi Bold", sans-serif;
+  color: #00a7e1;
+  text-decoration: underline;
+}
+
+img {
+  width: 80%;
+}
+
+hr {
+  width: 420px;
+  height: 25px;
+  margin: 5% 0;
+  border: none;
+  background-image: url("./images/divider_01.png");
+}
+
+/* END PAGE STYLES */
+/* HEADER SECTION STYLES */
+header {
+  display: block;
+  margin: 0 0 5% 0;
+}
+
+header #header-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+header #header-container img#name-logo {
+  width: 65%;
+  margin-right: -25%;
+}
+
+header #header-container img#profile-pic {
+  width: 50%;
+  z-index: -1;
+}
+
+header nav {
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+}
+
+header nav.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #8be8cb;
+  z-index: 1000;
+}
+
+header nav.sticky a {
+  color: #0d2149 !important;
+}
+
+header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+header nav ul li {
+  font-size: 16px;
+  padding: 10px;
+}
+
+/* END HEADER STYLES */
+/* MAIN SECTION STYLES */
+main {
+  padding: 5%;
+}
+
+main h1 {
+  text-align: center;
+  line-height: 36px;
+  font-weight: 400;
+  padding: 3%;
+}
+
+main .main-section::before {
+  display: block;
+  content: "";
+  margin-top: -100x;
+  height: 100px;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+main .main-section-div {
+  margin-bottom: 10%;
+}
+
+main ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main ul li {
+  list-style-type: disc;
+  margin: 0 7%;
+}
+
+main img {
+  margin: 0 10%;
+}
+
+main #form-area {
+  display: block;
+}
+
+main #form-area label {
+  position: relative;
+  margin-bottom: 5%;
+  font-family: "Commissioner Thin", sans-serif;
+  color: #00a7e1;
+  font-size: 24px;
+  letter-spacing: 1.5px;
+}
+
+main #form-area input,
+main #form-area textarea {
+  width: 100%;
+}
+
+main #form-area textarea {
+  height: 150px;
+}
+
+main #form-area input {
+  margin-bottom: 5%;
+}
+
+main #contact-footer {
+  background: none;
+  text-align: center;
+}
+
+main #contact-footer p {
+  color: #eee5e9;
+}
+
+main #contact-footer p a,
+main #contact-footer p span {
+  color: #00a7e1;
+}
+
+/* END MAIN STYLES */
+/* FOOTER SECTION STYLES */
+#footer {
+  text-align: center;
+  background: #208aae;
+  padding: 2%;
+}
+
+#footer p {
+  color: #0d2149;
+  font-weight: 400;
+}
+
+/* END FOOTER STYLES */
 /* 1280x760 MEDIA QUERY */
 @media all and (min-width: 1280px) {
   h1 {
