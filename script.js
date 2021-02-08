@@ -1,6 +1,4 @@
 $(function () {
-  console.log("Wazaaaaaaaaaaaaap");
-
   window.onscroll = function () {
     stickNavBar();
   };
